@@ -6,12 +6,12 @@ public class Transaction{
     public Category category;
     public int amount;
     Date createdAt;
-    User addedBy;
+    Integer addedBy;
 
-    public Transaction(Category category, int amount, User user) {
+    public Transaction(Category category, int amount, Integer userId) {
         this.category = category;
         this.amount = amount;
         createdAt = new Date();
-        addedBy = user;
+        addedBy = userId;
     }
 }
