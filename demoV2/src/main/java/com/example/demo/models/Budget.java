@@ -30,16 +30,12 @@ public class Budget {
         return currency;
     }
 
-    public void setCurrency(Currency currency) {
-        this.currency = currency;
+    public void setCurrency(String currencyCode) {
+        this.currency = Currency.getInstance(currencyCode);
     }
 
     public double getBudgetAmount() {
         return budgetAmount;
-    }
-
-    public void setBudgetAmount(int budgetAmount) {
-        this.budgetAmount = budgetAmount;
     }
 
     public List<Integer> getUsers() {
