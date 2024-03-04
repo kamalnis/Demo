@@ -1,4 +1,4 @@
-# Go to demo1 using: cd demoV2
+# Go to demoV2 using: cd demoV2
 # run using command: ./mvnw spring-boot:run
 # API's are as follows:
 
