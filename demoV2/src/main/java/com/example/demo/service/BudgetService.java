@@ -27,6 +27,10 @@ public class BudgetService {
             List<Integer> userBudgetIds = userIdBudgetRepo.get(budget.getUsers().get(i));
             Date currentDate = new Date();
 
+            if(userBudgetIds == null) {
+                continue;
+            }
+            
             for(int budgetId : userBudgetIds) {
                 Budget userBudget = budgetRepo.get(budgetId);
                 if(userBudget != null) {
